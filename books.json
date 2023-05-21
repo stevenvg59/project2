@@ -1,0 +1,91 @@
+{
+    "book": {
+        "name": "1984",
+        "author": "George Orwell",
+        "isbn": "9780451524935",
+        "language": "english",
+        "date": "1949",
+        "funfact": "'1984' introduced concepts like Big Brother, Newspeak, and the thought police, which have become part of the cultural lexicon."
+    },
+
+    "book2": {
+        "name": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "isbn": "9780061120084",
+        "language": "english",
+        "date": "1960",
+        "funfact": "Harper Lee's only published novel, it won the Pulitzer Prize for Fiction in 1961 and has become a classic of American literature."
+    },
+
+    "book3": {
+        "name": "Pride and Prejudice",
+        "author": "Jane Austen",
+        "isbn": "9780141439518",
+        "language": "english",
+        "date": "1813",
+        "funfact": "Jane Austen initially published the book anonymously, and it has since become one of the most beloved novels in English literature."
+    },
+
+    "book4": {
+        "name": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "isbn": "9780743273565",
+        "language": "english",
+        "date": "1925",
+        "funfact": "Although it received mixed reviews upon its release, 'The Great Gatsby' is now considered a masterpiece and a classic portrayal of the Jazz Age."
+    },
+
+    "book5": {
+        "name": "Harry Potter and the Philosopher's Stone",
+        "author": "J.K. Rowling",
+        "isbn": "9780590353427",
+        "language": "english",
+        "date": "1997",
+        "funfact": "The first book in the immensely popular Harry Potter series, it launched a global phenomenon and has sold millions of copies worldwide."
+    },
+
+    "book6": {
+        "name": "The Lord of the Rings",
+        "author": "J.R.R. Tolkien",
+        "isbn": "9780544003415",
+        "language": "english",
+        "date": "1954",
+        "funfact": "Originally intended as a single novel, 'The Lord of the Rings' was split into three volumes due to post-war paper shortages."
+    },
+
+    "book7": {
+        "name": "Moby-Dick",
+        "author": "Herman Melville",
+        "isbn": "9780142437247",
+        "language": "english",
+        "date": "1851",
+        "funfact": "Despite its initial commercial failure, 'Moby-Dick' is now considered one of the greatest works of American literature."
+    },
+
+    "book8": {
+        "name": "The Catcher in the Rye",
+        "author": "J.D. Salinger",
+        "isbn": "9780316769488",
+        "language": "english",
+        "date": "1951",
+        "funfact": "Controversial and influential, 'The Catcher in the Rye' is often studied in schools and has been widely banned and challenged."
+    },
+
+    "book9": {
+        "name": "The Hobbit",
+        "author": "J.R.R. Tolkien",
+        "isbn": "9780547928227",
+        "language": "english",
+        "date": "1937",
+        "funfact": "'The Hobbit' was initially written as a standalone children's story but later became the prelude to Tolkien's larger Middle-earth saga."
+    },
+
+    "book10": {
+        "name": "The Alchemist",
+        "author": "Paulo Coelho",
+        "isbn": "9780062315007",
+        "language": "portuguese",
+        "date": "1988",
+        "funfact": "Originally published in Portuguese, 'The Alchemist' has been translated into numerous languages and has sold over 150 million copies worldwide."
+    }
+}
