@@ -2,10 +2,10 @@
   "swagger": "2.0",
   "info": {
     "title": "PROJECT 2",
-    "description": "No much to say about this API, because I am still thinking what it is going to do",
+    "description": "No much to say about this API, because I am still thinking what it is going to do. For instance, it is going to be a collection of favorite books",
     "version": "1.0.0"
   },
-  "host": "localhost:8080",
+  "host": "cse341-project-2-rx9t.onrender.com",
   "basePath": "/",
   "schemes": [
     "https"
@@ -16,6 +16,81 @@
         "description": "",
         "parameters": [],
         "responses": {}
+      }
+    },
+    "/books/": {
+      "get": {
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "example": "any"
+                },
+                "author": {
+                  "example": "any"
+                },
+                "isbn": {
+                  "example": "any"
+                },
+                "language": {
+                  "example": "any"
+                },
+                "date": {
+                  "example": "any"
+                },
+                "funfact": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/books/{id}": {
+      "get": {
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
       }
     }
   }

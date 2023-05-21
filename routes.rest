@@ -17,3 +17,26 @@ content-type: application/json
     "funfact": "testing facts"
 }
 ###
+
+
+
+
+GET https://cse341-project-2-rx9t.onrender.com/books 
+###
+
+GET https://cse341-project-2-rx9t.onrender.com/books/6469ad834ff7ef6583f8f092
+###
+
+###
+POST https://cse341-project-2-rx9t.onrender.com/books HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Testing",
+    "author": "Steven Valencia",
+    "isbn": "51996018565",    
+    "language": "spanish",
+    "date": "2023",
+    "funfact": "testing facts"
+}
+###

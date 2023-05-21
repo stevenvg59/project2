@@ -3,9 +3,9 @@ const swaggerAutogen = require('swagger-autogen')();
 const doc = {
   info: {
     title: 'PROJECT 2',
-    description: 'No much to say about this API, because I am still thinking what it is going to do'
+    description: 'No much to say about this API, because I am still thinking what it is going to do. For instance, it is going to be a collection of favorite books'
   },
-  host: 'localhost:8080',
+  host: 'cse341-project-2-rx9t.onrender.com',
   schemes: ['https']
 };
 
