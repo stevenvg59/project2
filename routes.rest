@@ -1,0 +1,19 @@
+GET http://localhost:8080/books
+###
+
+GET http://localhost:8080/books/6469ad834ff7ef6583f8f092
+###
+
+###
+POST http://localhost:8080/books HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Testing",
+    "author": "Steven Valencia",
+    "isbn": "51996018565",    
+    "language": "spanish",
+    "date": "2023",
+    "funfact": "testing facts"
+}
+###
