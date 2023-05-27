@@ -3,12 +3,12 @@ const mongodb = require('../db/connect');
 const ObjectId = require('mongodb').ObjectId;
 
 const getBooks = async (req, res) => {
-    mongodb
+    const response = await mongodb
       .getDb()
       .db('CS341')
       .collection('project2')
       .find()
-      .toArray((err, lists) => {
+      response.toArray((err, lists) => {
         if (err) {
           res.status(400).json({ message: err });
         }
@@ -31,8 +31,8 @@ const getOneBook = async (req, res) => {
     .find({ _id: bookId });
   
     console.log(response);
-    
-    response.toArray().then((err, lists) => {
+
+    response.toArray((err, lists) => {
       if(err){
         res.status(400).json({ message: err });
       }
