@@ -16,10 +16,29 @@ content-type: application/json
     "date": "2023",
     "funfact": "testing facts"
 }
-###
+
+### UPDATE BOOK
+
+PUT http://localhost:8080/books/646ae7aa07f51e0774056dae HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Testing",
+    "author": "Steven Valencia",
+    "isbn": "51996018565",    
+    "language": "spanish",
+    "date": "2023",
+    "funfact": "testing facts"
+}
+
+### DELETE BOOK
+
+DELETE http://localhost:8080/books/646ae7aa07f51e0774056dae HTTP/1.1
 
 
 
+
+### RENDER
 
 GET https://cse341-project-2-rx9t.onrender.com/books 
 ###
@@ -39,4 +58,20 @@ content-type: application/json
     "date": "2023",
     "funfact": "testing facts"
 }
+
 ###
+PUT http://cse341-project-2-rx9t.onrender.com/books/646ae7aa07f51e0774056dae HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Testing",
+    "author": "Steven Valencia",
+    "isbn": "51996018565",    
+    "language": "spanish",
+    "date": "2023",
+    "funfact": "testing facts"
+}
+
+### DELETE BOOK
+
+DELETE http://cse341-project-2-rx9t.onrender.com/books/646ae7aa07f51e0774056dae HTTP/1.1
