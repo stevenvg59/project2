@@ -3,30 +3,42 @@ const mongodb = require('../db/connect');
 const ObjectId = require('mongodb').ObjectId;
 
 const getBooks = async (req, res) => {
-    const response  = await mongodb
-    .getDb()
-    .db('CS341')
-    .collection('project2')
-    .find();
-    console.log(response);
-    response.toArray().then((lists) => {
+    mongodb
+      .getDb()
+      .db('CS341')
+      .collection('project2')
+      .find()
+      .toArray((err, lists) => {
+        if (err) {
+          res.status(400).json({ message: err });
+        }
         res.setHeader('Content-Type', 'application/json');
         res.status(200).json(lists);
       });
 };
 
 const getOneBook = async (req, res) => {
+
+    if (!ObjectId.isValid(req.params.id)) {
+      res.status(400).json('Must use a valid contact id to find a contact.');
+    }
+
     const bookId = new ObjectId(req.params.id);
     const response = await mongodb
     .getDb()
     .db('CS341')
     .collection('project2')
     .find({ _id: bookId });
+  
     console.log(response);
-    response.toArray().then((lists) => {
-        res.setHeader('Content-Type', 'application/json');
-        res.status(200).json(lists[0]);
-  });
+    
+    response.toArray().then((err, lists) => {
+      if(err){
+        res.status(400).json({ message: err });
+      }
+      res.setHeader('Content-Type', 'application/json');
+      res.status(200).json(lists[0]);
+      });
   };
 
 const addBook = async (req, res) => {
