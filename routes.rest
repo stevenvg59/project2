@@ -19,21 +19,21 @@ content-type: application/json
 
 ### UPDATE BOOK
 
-PUT http://localhost:8080/books/646ae7aa07f51e0774056dae HTTP/1.1
+PUT http://localhost:8080/books/6472e1976fdb3c44b6a844b8 HTTP/1.1
 content-type: application/json
 
 {
-    "name": "Testing",
+    "name": "Testing2",
     "author": "Steven Valencia",
     "isbn": "51996018565",    
     "language": "spanish",
     "date": "2023",
-    "funfact": "testing facts"
+    "funfact": "new testing facts"
 }
 
 ### DELETE BOOK
 
-DELETE http://localhost:8080/books/646ae7aa07f51e0774056dae HTTP/1.1
+DELETE http://localhost:8080/books/64723f846b209f5a69550f1f HTTP/1.1
 
 
 
