@@ -3,12 +3,12 @@ const mongodb = require('../db/connect');
 const ObjectId = require('mongodb').ObjectId;
 
 const getBooks = async (req, res) => {
-    const response = await mongodb
+    mongodb
       .getDb()
       .db('CS341')
       .collection('project2')
       .find()
-      response.toArray((err, lists) => {
+      .toArray((err, lists) => {
         if (err) {
           res.status(400).json({ message: err });
         }
@@ -24,15 +24,12 @@ const getOneBook = async (req, res) => {
     }
 
     const bookId = new ObjectId(req.params.id);
-    const response = await mongodb
+    mongodb
     .getDb()
     .db('CS341')
     .collection('project2')
-    .find({ _id: bookId });
-  
-    console.log(response);
-
-    response.toArray((err, lists) => {
+    .find({ _id: bookId })
+    .toArray((err, lists) => {
       if(err){
         res.status(400).json({ message: err });
       }
@@ -84,7 +81,7 @@ const addBook = async (req, res) => {
     if (response.modifiedCount > 0) {
       res.status(204).send();
     } else {
-      res.status(500).json(response.error || 'Some error occurred while updating the book');
+      res.status(500).json(response.error || 'Some error occurred while updating the book.');
     }
   };
 
