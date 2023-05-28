@@ -61,6 +61,11 @@ const addBook = async (req, res) => {
   };
 
   const updateBook = async (req, res) => {
+
+    if (!ObjectId.isValid(req.params.id)) {
+      res.status(400).json('Must use a valid contact id to find a contact.');
+    }
+
     const bookId = new ObjectId(req.params.id);
     const book = {
       name: req.body.name,
@@ -85,6 +90,11 @@ const addBook = async (req, res) => {
   };
 
   const deleteBook = async (req, res) => {
+
+    if (!ObjectId.isValid(req.params.id)) {
+      res.status(400).json('Must use a valid contact id to find a contact.');
+    }
+    
     const bookId = new ObjectId(req.params.id);
     const response = await mongodb
     .getDb()
